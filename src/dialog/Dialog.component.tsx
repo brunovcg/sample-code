@@ -2,7 +2,7 @@ import { StyledDialog, StyledDialogButton } from "./Dialog.styled";
 import { DialogProps } from "./Dialogs.types";
 import { Button } from "../components";
 import { useEffect, useRef } from "react";
-import Utils from "../utils";
+import { Utils } from "../utils";
 import { useDialog } from ".";
 import { useOnClickOutside, useOnKeyPress, useViewport } from "../hooks";
 

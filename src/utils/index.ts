@@ -1,4 +1,4 @@
-export default abstract class Utils {
+export abstract class Utils {
   static filterMap<ArrayType extends unknown[], MapReturn>(
     arr: ArrayType | undefined,
     filterFn: (filterItem: ArrayType[number], ...rest: unknown[]) => boolean,
@@ -31,5 +31,20 @@ export default abstract class Utils {
       }
       return acc;
     }, "");
+  }
+}
+
+export abstract class TestUtils {
+  static fireEventAtPosition(
+    element: HTMLElement,
+    { clientX, clientY }: { clientX: number; clientY: number }
+  ) {
+    const clickEvent = new MouseEvent("click", {
+      bubbles: true,
+      cancelable: true,
+      clientX,
+      clientY,
+    });
+    element.dispatchEvent(clickEvent);
   }
 }

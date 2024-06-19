@@ -5,6 +5,15 @@ Code quality is checked by Prettier, ESLint, Sonar Lint, Unit Tests with React T
 called before a commit using Husky and Lint-stage libs.
 Also it is installed Storybook to easily test manually some components.
 
+## Husky
+
+This application makes use of husky and pre-commit hooks. It will run tests and do a lint check (considering prettier, sonar and lint rules) before allowing commits. You might need to run the following commands to give permissions:
+
+```shell
+chmod ug+x .husky/*
+chmod ug+x .git/hooks/*
+```
+
 ## Features
 
 ### Dialog Manager
@@ -69,4 +78,12 @@ It will open on localhost:6006
 
 ```bash
 npm run storybook
+```
+
+## How to Run Tests to run Locally:
+
+It will open on localhost:6006
+
+```bash
+npm run test
 ```

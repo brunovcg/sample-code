@@ -1,5 +1,5 @@
 import StyledIcon from "./Icon.styled";
-import Utils from "@/utils";
+import { Utils } from "@/utils";
 import { IconProps } from "./Icon.types";
 import { icons } from "./Icon.registration";
 import Wrapper from "../wrapper/Wrapper";

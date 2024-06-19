@@ -1,5 +1,5 @@
-import StyledBox from './Box.styled';
-import { BoxProps } from './Box.types';
+import StyledBox from "./Box.styled";
+import { BoxProps } from "./Box.types";
 
 export default function Box({
   children,
@@ -15,7 +15,7 @@ export default function Box({
   minHeight,
   maxHeight,
   gap,
-  wrap = 'wrap',
+  wrap = "wrap",
   flex,
   ...rest
 }: Readonly<BoxProps>) {

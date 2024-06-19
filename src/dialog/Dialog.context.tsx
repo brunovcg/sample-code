@@ -40,7 +40,7 @@ export function DialogProvider({
       <Fragment key={dialogKey}>
         {dialogSubscriptions[`${dialogKey}`].component}
       </Fragment>
-    )
+    ),
   );
 
   const openDialog = useCallback(
@@ -72,7 +72,7 @@ export function DialogProvider({
         },
       }));
     },
-    []
+    [],
   );
 
   const closeDialog = useCallback((id: DialogId) => {
@@ -84,7 +84,7 @@ export function DialogProvider({
 
   const providerValue = useMemo(
     () => ({ closeDialog, openDialog, dialogSubscriptions }),
-    [closeDialog, openDialog, dialogSubscriptions]
+    [closeDialog, openDialog, dialogSubscriptions],
   );
 
   return (

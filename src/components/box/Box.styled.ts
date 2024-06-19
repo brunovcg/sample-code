@@ -1,11 +1,11 @@
-import styled, { css } from 'styled-components';
-import { StyledBoxProps } from './Box.types';
+import styled, { css } from "styled-components";
+import { StyledBoxProps } from "./Box.types";
 
 const handleGap = (gap: number | [number, number] | [number] | undefined) => {
   if (!gap) return undefined;
 
   if (Array.isArray(gap)) {
-    return gap.map((item) => `${item}px`).join(' ');
+    return gap.map((item) => `${item}px`).join(" ");
   }
 
   return `${gap}px`;

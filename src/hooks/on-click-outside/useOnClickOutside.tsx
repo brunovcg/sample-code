@@ -6,7 +6,7 @@ type Event = MouseEvent | TouchEvent;
 const useOnClickOutside = (
   target: UseOnClickOutsideRef,
   handler: (event: Event) => void,
-  active = true
+  active = true,
 ) => {
   useEffect(() => {
     if (active) {

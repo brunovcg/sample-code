@@ -19,7 +19,7 @@ export const COLOR_VARIANTS = Object.keys(colorVariants).reduce(
 
     return acc;
   },
-  {} as Record<keyof typeof colorVariants, string>
+  {} as Record<keyof typeof colorVariants, string>,
 );
 
 export type ColorsVariant = keyof typeof colorVariants;

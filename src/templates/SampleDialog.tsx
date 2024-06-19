@@ -23,7 +23,6 @@ export default function SampleDialog() {
         </div>
       }
       dialogId="SampleDialog"
-      closeOnOutsideClick
       title="Sample Dialog"
       buttons={buttons}
     />

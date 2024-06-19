@@ -23,7 +23,7 @@ export default function useViewport() {
 
   const isMobile = useMemo(
     () => width <= Number(Configs.mobileBreakpoint),
-    [width]
+    [width],
   );
 
   return { width, height, isMobile };

@@ -4,7 +4,7 @@ import { EventKey, UseOnKeyPressProps } from "./useOnKeyPress.types";
 const preventBehavior = (
   event: KeyboardEvent,
   stopPropagation: boolean,
-  preventDefault: boolean
+  preventDefault: boolean,
 ) => {
   if (stopPropagation) {
     event.stopPropagation();
@@ -34,12 +34,12 @@ export default function useOnKeyPress({
     if (target) {
       target.current?.addEventListener(
         type,
-        keydownEvent as unknown as EventListenerOrEventListenerObject
+        keydownEvent as unknown as EventListenerOrEventListenerObject,
       );
     } else {
       document.addEventListener(
         type,
-        keydownEvent as unknown as EventListenerOrEventListenerObject
+        keydownEvent as unknown as EventListenerOrEventListenerObject,
       );
     }
 
@@ -47,12 +47,12 @@ export default function useOnKeyPress({
       if (target?.current) {
         target.current?.removeEventListener(
           type,
-          keydownEvent as unknown as EventListenerOrEventListenerObject
+          keydownEvent as unknown as EventListenerOrEventListenerObject,
         );
       } else {
         document.removeEventListener(
           type,
-          keydownEvent as unknown as EventListenerOrEventListenerObject
+          keydownEvent as unknown as EventListenerOrEventListenerObject,
         );
       }
     };

@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <GlobalStyles />
       <App />
     </DialogProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

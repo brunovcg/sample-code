@@ -1,4 +1,4 @@
-import Utils from "@/utils";
+import { Utils } from "@/utils";
 import Icon from "../icon/Icon";
 import StyledButton from "./Button.styled";
 import { ButtonProps } from "./Button.types";

@@ -14,9 +14,6 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./tests/setup.ts",
     watch: false,
-    poolOptions: {
-      vmThreads: { minThreads: 8 },
-    },
   },
   resolve: {
     alias: [
